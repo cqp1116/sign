@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link th:href="@{../static/bootstrap-3.3.7-dist/css/bootstrap.css}" ref="stylesheet"/>
+    <link th:href="@{../static/bootstrap-3.3.7-dist/css/bootstrap-theme.css}" th:ref="stylesheet"/>
+</head>
+<body>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">访问到model</h3>
+    </div>
+    <div class="panel-body">
+        <span th:text="${user.userName}"></span>
+    </div>
+</div>
+<script th:src="@{../static/js/jquery.min.js}"></script>
+<script th:src="@{../static/bootstrap-3.3.7-dist/js/bootstrap.js}"></script>
+</body>
+</html>
