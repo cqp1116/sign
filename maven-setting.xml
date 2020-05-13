@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <pluginGroups>
+   
+  </pluginGroups>
+  <proxies>
+    
+  </proxies>
+
+  <servers>   
+    <server>
+        <id>rdc-releases</id>
+        <username>lPwskW</username>
+        <password>fe02CcSXrC</password>
+    </server>
+    <server>
+        <id>rdc-snapshots</id>
+        <username>lPwskW</username>
+        <password>fe02CcSXrC</password>
+    </server>
+  </servers>
+  <mirrors>
+    <mirror>
+        <id>alimaven</id>
+        <name>aliyun maven</name>
+        <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        <mirrorOf>central</mirrorOf>
+    </mirror> 
+    <mirror>
+      <id>alimaven</id>
+      <name>aliyun maven</name>
+      <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+      <mirrorOf>central</mirrorOf>        
+    </mirror>
+  </mirrors>
+  <profiles>
+<profile>     
+      <id>JDK-1.8</id>       
+      <activation>       
+        <activeByDefault>true</activeByDefault>       
+        <jdk>1.8</jdk>       
+      </activation>       
+      <properties>       
+        <maven.compiler.source>1.8</maven.compiler.source>       
+        <maven.compiler.target>1.8</maven.compiler.target>       
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>       
+      </properties>       
+    </profile> 
+   
+    <profile>
+    <id>rdc-private-repo</id>
+    <repositories>
+      <repository>
+        <id>rdc-releases</id>
+        <url>https://repo.rdc.aliyun.com/repository/79844-release-DuCvlm/</url>
+      </repository>
+      <repository>
+        <id>rdc-snapshots</id>
+        <url>https://repo.rdc.aliyun.com/repository/79844-snapshot-CIuy2s/</url>
+      </repository>
+    </repositories>
+  </profile>
+  </profiles>
+</settings>
